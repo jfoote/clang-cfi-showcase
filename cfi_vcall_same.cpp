@@ -23,7 +23,7 @@ struct Evil {
     Evil() {}
     virtual ~Evil() {}
 
-    virtual void makeAdmin(int i) {
+    virtual void makeAdmin(void * i) {
         std::cout << "CFI Prevents this control flow " << i << "\n";
         std::cout << "Evil::makeAdmin\n";
     }
